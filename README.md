@@ -1,68 +1,66 @@
 # Regression-Models-for-Stock-Forecasting
-This project applies Machine Learning to predict student scores based on study hours. It demonstrates a supervised learning workflow using Linear Regression, from data preprocessing to model evaluation.
+Overview
+
+This project applies Machine Learning (Linear Regression) to predict next-day stock prices. It includes data preprocessing, feature scaling, hyperparameter tuning, model training, evaluation, and result visualization.
 
 Features
 
-Exploratory Data Analysis (EDA) to understand patterns
+Loads and preprocesses stock data
 
-Linear Regression implementation with scikit-learn
+Applies Linear Regression for prediction
 
-Hyperparameter tuning with GridSearchCV
+Includes feature scaling for better accuracy
 
-Model evaluation using R², MAE, and RMSE
+Hyperparameter tuning to optimize model performance
 
-Visualizations for better interpretation
+Visualizes predictions vs. actual stock prices
 
-Tech Stack
+Project Structure
+├── data/                 # Stock price dataset
+├── stock_prediction.ipynb # Jupyter Notebook with code
+├── README.md             # Project documentation
 
-Python
+Requirements
 
-NumPy, Pandas, Matplotlib, Seaborn
+Python 3.x
+
+NumPy
+
+Pandas
+
+Matplotlib
 
 scikit-learn
 
-How It Works
-
-Import dataset of study hours and scores
-
-Explore and visualize the data
-
-Train a Linear Regression model
-
-Optimize with GridSearchCV
-
-Evaluate performance and visualize predictions
-
-Results
-
-Best parameter: fit_intercept=True
-
-Strong correlation between study hours and scores
-
-Model generalizes well for small datasets
-
-Usage
-
-Clone the repo:
-
-git clone https://github.com/your-username/student-score-prediction.git
-cd student-score-prediction
-
-
-Install dependencies:
+Install dependencies with:
 
 pip install -r requirements.txt
 
+Usage
 
-Run the notebook to train and test the model.
+Clone the repository:
+
+git clone https://github.com/your-username/stock-price-prediction.git
+
+
+Open the Jupyter Notebook:
+
+jupyter notebook stock_prediction.ipynb
+
+
+Run all cells to preprocess data, train the model, and view results.
+
+Results
+
+The model predicts next-day stock prices with reasonable accuracy. Visualization shows actual vs. predicted trends for better interpretation.
 
 Future Improvements
 
-Add more student-related features (e.g., sleep, environment, consistency)
+Use advanced models (Random Forest, XGBoost, LSTMs)
 
-Compare different regression models
+Expand dataset for better accuracy
 
-Deploy as a simple web app
+Add a simple Flask/Django web app for real-time predictions
 
 License
 

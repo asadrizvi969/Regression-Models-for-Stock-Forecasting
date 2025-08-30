@@ -1,67 +1,56 @@
-# Regression-Models-for-Stock-Forecasting
-Overview
+# Stock Price Prediction using Machine Learning
 
-This project applies Machine Learning (Linear Regression) to predict next-day stock prices. It includes data preprocessing, feature scaling, hyperparameter tuning, model training, evaluation, and result visualization.
+## Description
+Stock Price Prediction using Machine Learning. A simple project applying Linear Regression with feature scaling and hyperparameter tuning to predict next day stock prices. Includes data preprocessing, model training, evaluation, and visualization of results.
 
-Features
+## Features
+- Fetch historical stock data using Yahoo Finance API (`yfinance`).
+- Preprocess data with feature scaling and handle missing values.
+- Train a Linear Regression model using a Pipeline.
+- Hyperparameter tuning with GridSearchCV.
+- Visualize actual vs predicted stock prices.
+- Predict next-day stock closing prices.
 
-Loads and preprocesses stock data
-
-Applies Linear Regression for prediction
-
-Includes feature scaling for better accuracy
-
-Hyperparameter tuning to optimize model performance
-
-Visualizes predictions vs. actual stock prices
-
-Project Structure
-├── data/                 # Stock price dataset
-├── stock_prediction.ipynb # Jupyter Notebook with code
-├── README.md             # Project documentation
-
-Requirements
-
-Python 3.x
-
-NumPy
-
-Pandas
-
-Matplotlib
-
-scikit-learn
-
-Install dependencies with:
-
-pip install -r requirements.txt
-
-Usage
-
-Clone the repository:
-
+## Installation
+1. Clone this repository:
+```bash
 git clone https://github.com/your-username/stock-price-prediction.git
+```
+2. Install required libraries:
 
+```bash
+pip install yfinance pandas numpy matplotlib seaborn scikit-learn
+```
+## Usage
 
-Open the Jupyter Notebook:
+1. Open the notebook `Stock_Price_Prediction.ipynb` in Google Colab or Jupyter.
 
-jupyter notebook stock_prediction.ipynb
+2. Run each cell sequentially.
 
+3. Modify the stock symbol in the code to predict for a different company.
 
-Run all cells to preprocess data, train the model, and view results.
+4. Observe plots, metrics, and the predicted next-day price.
 
-Results
+## Learnings
 
-The model predicts next-day stock prices with reasonable accuracy. Visualization shows actual vs. predicted trends for better interpretation.
+ - Fetching and cleaning financial data
 
-Future Improvements
+ - Feature engineering for stock price prediction
 
-Use advanced models (Random Forest, XGBoost, LSTMs)
+ - Using `Pipeline` and `GridSearchCV` for ML workflows
 
-Expand dataset for better accuracy
+ - Evaluating models with MAE and R²
 
-Add a simple Flask/Django web app for real-time predictions
+ - Visualizing predictions and residuals
 
-License
+## Future Improvements
 
-This project is licensed under the MIT License.
+ - Add more features like RSI, MACD, Bollinger Bands
+
+ - Experiment with advanced models (Random Forest, XGBoost, LSTM)
+
+ - Build a simple web app to interact with predictions
+
+## Author
+
+Syed Asad Abbas Rizvi
